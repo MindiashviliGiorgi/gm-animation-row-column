@@ -1,0 +1,83 @@
+<div class="main">
+  <header>
+      <div class="header-main">
+          <div class="header-top"></div>
+          <div class="header-bottom">
+              <div class="header-bottom-left">
+                  <div class="h-b-l-title">
+                      <h1>Data Sources</h1>
+                  </div>
+                  <div class="h-b-l-links">
+                      <ul>
+                          <li><a href="#">Article</a></li>
+                          <li><a href="#">Github</a></li>
+                          <li><a href="#">Previous</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="header-botttom-right">
+                  <div class="four-box" (click)="fourBox()" (mouseover)="boxAnimation=true" (mouseout)="boxAnimation=false">
+                      <div class="box" [class.box-hover]="boxAnimation"></div>
+                      <div class="box" [class.box-hover]="boxAnimation"></div>
+                      <div class="box" [class.box-hover]="boxAnimation"></div>
+                      <div class="box" [class.box-hover]="boxAnimation"></div>
+                  </div>
+                  <div class="three-line" (click)="threeLine()" (mouseover)="lineAnimation=true" (mouseout)="lineAnimation=false">
+                      <div class="line" [class.line-hover]="lineAnimation"></div>
+                      <div class="line" [class.line-hover]="lineAnimation"></div>
+                      <div class="line" [class.line-hover]="lineAnimation"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- section  -->
+  <section>
+      <div class="section-main" >
+          <div class="container"
+          [class.c-animation]="reverseTwo"
+          [class.c-animation-reverse]="reverseOne">
+              <div class="container-title">
+                  <h3>Cycling 2019</h3>
+              </div>
+              <div class="container-update">
+                  <p>Upload, August 25, 2000</p>
+              </div>
+              <div class="v-p">
+                  <p>VARIABLE</p>
+                  <p>PROPERTY</p>
+              </div>
+          </div>
+          <div class="container2"
+          [class.c-animation2]="reverseTwo"
+          [class.c-animation-reverse2]="reverseOne">
+              <div class="container-title">
+                  <h3>Cycling 2019 #2</h3>
+              </div>
+              <div class="container-update">
+                  <p>Upload, August 25, 2000</p>
+              </div>
+              <div class="v-p">
+                  <p>VARIABLE</p>
+                  <p>PROPERTY</p>
+              </div>
+          </div>
+          <div class="container3"
+          [class.c-animation3]="reverseTwo"
+          [class.c-animation-reverse3]="reverseOne">
+              <div class="container-title">
+                  <h3>Cycling 2019 #3</h3>
+              </div>
+              <div class="container-update">
+                  <p>Upload, August 25, 2000</p>
+              </div>
+              <div class="v-p">
+                  <p>VARIABLE</p>
+                  <p>PROPERTY</p>
+              </div>
+          </div>
+      </div>
+  </section>
+</div>
+
+

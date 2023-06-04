@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #001b50;
+}
+.header-main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.header-top {
+  width: 100%;
+  height: 50px;
+  background-color: #464646;
+  position: relative;
+  margin-bottom: 30px;
+}
+.header-top::after {
+  content: "+";
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #0052f7;
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.header-bottom {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-bottom-left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.h-b-l-title h1 {
+  color: #fff;
+  font-size: 30px;
+}
+.h-b-l-links ul {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+}
+.h-b-l-links ul li {
+  list-style: none;
+}
+.h-b-l-links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+}
+.h-b-l-links ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 2px;
+  z-index: 2;
+  bottom: -3px;
+  left: 0;
+  transition: 0.2s;
+}
+.h-b-l-links ul li a:hover::after {
+  width: 100%;
+  transition: 0.2s;
+}
+/* header bottom right  */
+.header-botttom-right {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 30px;
+}
+.four-box {
+  display: grid;
+  width: 50px;
+  height: auto;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 5px;
+  cursor: pointer;
+}
+.box {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid #0037a6;
+}
+.box-hover {
+  box-shadow: 0px 0px 3px #0052f7;
+  border: 2px solid #0052f7;
+}
+.three-line {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  cursor: pointer;
+}
+.line {
+  width: 40px;
+  height: 8px;
+  border-radius: 2px;
+  background-color: transparent;
+  border: 2px solid #0037a6;
+  cursor: pointer;
+}
+.line-hover {
+  box-shadow: 0px 0px 3px #0052f7;
+  border: 2px solid #0052f7;
+}
+/* section  *9999999999999999999999999999999999999999*/
+.section-main {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-column-gap: 20px;
+  padding: 10px 100px;
+  position: relative;
+}
+.container,
+.container2,
+.container3 {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: #1c3c78;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  overflow: hidden;
+}
+.container-title h3 {
+  color: #fff;
+  font-size: 24px;
+}
+.container-update {
+  margin-bottom: 20px;
+}
+.container-update p {
+  color: #fff;
+  font-size: 16px;
+}
+.v-p {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  width: 100px;
+  text-align: center;
+}
+.v-p p {
+  
+  padding: 2px 4px;
+  color: #fff;
+  border-radius: 3px;
+  width: auto;
+}
+.c-animation {
+  width: 900px;
+  height: 100px;
+  animation: container-animation 2s;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  overflow: hidden;
+}
+.c-animation2 {
+  width: 900px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  overflow: hidden;
+  animation: container2-animation 2s;
+  position: absolute;
+  top: 120px;
+  left: 100px;
+}
+.c-animation3 {
+  width: 900px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  overflow: hidden;
+  animation: container3-animation 2s;
+  position: absolute;
+  top: 230px;
+  left: 100px;
+}
+.c-animation-reverse {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: #1c3c78;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  animation: container-animation-reverse 2s;
+  overflow: hidden;
+}
+.c-animation-reverse2 {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: #1c3c78;
+  position: absolute;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  animation: container-animation-reverse2 2s;
+  top: 10px;
+  left: 420px;
+  overflow: hidden;
+}
+.c-animation-reverse3 {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: #1c3c78;
+  position: absolute;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  animation: container-animation-reverse3 2s;
+  top: 10px;
+  left: 740px;
+  overflow: hidden;
+}
+@keyframes container-animation {
+  0%{
+      width: 300px;
+      height: 300px;
+      background-color: #3e1a6f;
+  }
+  50%{
+      width: 300px;
+      height: 100px;
+  }
+  100%{
+      width: 900px;
+      height: 100px;
+  }
+}
+@keyframes container2-animation {
+  0%{
+      width: 300px;
+      height: 300px;
+      top: 0;
+      left: 420px;
+      background-color: #3e1a6f;
+  }
+  50% {
+      width: 300px;
+      height: 100px;
+      top: 120px;
+      left: 420px;
+  }
+}
+@keyframes container3-animation {
+  0%{
+      width: 300px;
+      height: 300px;
+      top: 0;
+      left: 740px;
+      background-color: #3e1a6f;
+  }
+  50%{
+      width: 300px;
+      height: 100px;
+      top: 230px;
+      left: 740px;
+  }
+}
+@keyframes container-animation-reverse {
+  0% {
+      width: 900px;
+      height: 100px;
+      background-color: #3e1a6f;
+  }
+  50%{
+      width: 300px;
+      height: 100px;
+  }
+  100% {
+      width: 300px;
+      height: 300px;
+  }
+}
+@keyframes container-animation-reverse2 {
+  0% {
+      left: 100px;
+      top: 120px;
+      width: 900px;
+      height: 100px;
+      background-color: #3e1a6f;
+  }
+  50%{
+      left: 420px;
+      top: 120px;
+      width: 300px;
+      height: 100px;
+  }
+  100% {
+      top: 10px;
+      left: 420px;
+      height: 300px;
+      height: 300px;
+  }
+}
+@keyframes container-animation-reverse3 {
+  0% {
+      top: 230px;
+      left: 100px;
+      width: 900px;
+      height: 100px;
+      background-color: #3e1a6f;
+  }
+  50% {
+      top: 230px;
+      width: 300px;
+      height: 100px;
+      left: 740px;
+  }
+  100% {
+      top: 10px;
+      left: 740px;
+      width: 300px;
+      height: 300px;
+  }
+}
